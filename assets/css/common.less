@@ -1,0 +1,234 @@
+@import "base.less";
+html {
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: #333;
+  letter-spacing: 1px;
+}
+html, body {
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+ul li{
+  list-style: none;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.clear-f {
+  zoom: 1;
+}
+.clear-f:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  height: 0px;
+  content: "."
+}
+.el-container.outer-container {
+  min-width: 1024px;
+}
+.main-container {}
+.m-header {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+// 信息
+.m-info-header {
+  border-left: 5px solid @ht1;
+  font-size: 16px;
+  // font-weight: bold;
+  color: #555;
+  text-indent: 10px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.m-info-body {
+  margin-bottom: 20px;
+}
+.m-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.col-number-2 td {
+  width: 50%;
+}
+.col-number-3 td {
+  width: 33.33%;
+}
+.m-info-table {
+  background: @ht3;
+}
+.m-info-table tr {
+  height: 48px;
+  td {
+    padding: 0 14px;
+  }
+}
+.m-mini-tabel {
+  width: 80%;
+  tr {
+    height: 30px;
+    line-height: 30px;
+    th {
+      background: #fafafa;
+      color: #333;
+    }
+    th, td {
+      text-align: left;
+      padding: 0 10px;
+      border: 1px solid @ht4;
+    }
+  }
+  tr:nth-of-type(2n+2) {
+    background: #fafafa;
+  }
+  tr:hover {
+    background: #fafafa;
+  }
+}
+.m-info-collapse {
+  .el-collapse-item__header {
+    font-size: 14px;
+    background: @ht3;
+  }
+  .el-collapse-item__wrap {
+    border: none;
+  }
+}
+//Button
+.main-button {
+  width: 114px;
+}
+.el-button.el-button-text-danger {
+  color: @btn-danger  ! important;
+}
+.el-button.el-button-text-danger:hover {
+  color: @btn-danger-hover  ! important;
+}
+.el-button.el-button-text-danger:active {
+  color: @btn-danger-active  ! important;
+}
+.el-button.el-button-text-danger:visited {
+  color: @btn-danger  ! important;
+}
+.ui-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  &:disabled {
+    cursor: default ! important;
+  }
+  &.ui-button-primary {
+    background: @s1;
+    color: @w4;
+    &:disabled {
+      background: @s5;
+    }
+    &:enabled {
+      &:hover {
+        background: lighten(@s1, 3%);
+      }
+      &:active {
+        background: darken(@s1, 3%);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+// Form 通常不是Form标签
+.m-form {
+  padding: 20px 40px;
+  .m-f-title {
+    margin-bottom: 20px;
+  }
+  .m-form-item {
+    .m-f-table {
+      td {
+        padding-bottom: 20px;
+        &:nth-child(n+1) {
+          padding-right: 10px;
+        }
+        &:nth-child(n+2) {
+          padding-left: 10px;
+        }
+        &:nth-last-child(1) {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+  .m-form-action {
+    margin-top: 40px;
+    text-align: right;
+  }
+}
+//message
+.ajax-messagebox {
+  width: 380px;
+  &.access-messagebox {
+    width: 400px;
+  }
+  .el-message__icon {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  .el-message__closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+  .el-message__content {
+    width: 100%;
+    padding: 0 30px;
+    .message-collapse-btn {
+      position: absolute;
+      right: 50px;
+      font-size: 22px;
+      top: 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .ajax-detail {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      max-height: 100px;
+      overflow-y: auto;
+      background: #fffdee;
+      color: #666;
+      margin-left: -31px;
+      margin-right: -17px;
+      transition: height 0.3s;
+    }
+  }
+}
+// loading
+.el-container .el-loading-mask {
+  z-index: 9999;
+}

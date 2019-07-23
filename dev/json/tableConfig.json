@@ -1,0 +1,125 @@
+{
+  "formItems": [
+  {
+    "title": "基本信息",
+    "type": "group-title"
+  },
+  {
+    "title": "商品分类",
+    "type": "cascader",
+    "prop": "category_id",
+    "attrs":
+    {
+      "options": [],
+      "changeOnSelect": true,
+      "clearable": true
+    },
+    "listeners":
+    {}
+  },
+  {
+    "title": "商品品牌",
+    "required": true,
+    "type": "select",
+    "prop": "brand_id",
+    "attrs":
+    {},
+    "selectOptions": []
+  },
+  {
+    "title": "年龄",
+    "type": "select",
+    "prop": "age",
+    "attrs":
+    {},
+    "selectOptions": []
+  },
+  {
+    "title": "体型",
+    "type": "select",
+    "prop": "size",
+    "attrs":
+    {},
+    "selectOptions": []
+  },
+  {
+    "title": "颗粒大小",
+    "type": "select",
+    "prop": "size",
+    "attrs":
+    {},
+    "selectOptions": []
+  },
+  {
+    "title": "商品单位",
+    "type": "input",
+    "prop": "produnit",
+    "attrs":
+    {}
+  },
+  {
+    "type": "row",
+    "formItems": [
+    {
+      "title": "精品推荐",
+      "type": "radio-group",
+      "prop": "prop4",
+      "span": 8,
+      "attrs":
+      {}
+    },
+    {
+      "title": "首发新品",
+      "type": "radio-group",
+      "prop": "prop6",
+      "span": 8,
+      "attrs":
+      {}
+    },
+    {
+      "title": "是否包邮",
+      "type": "radio-group",
+      "prop": "prop7",
+      "span": 8,
+      "attrs":
+      {}
+    }]
+  },
+  {
+    "type": "row",
+    "formItems": [
+    {
+      "title": "商品售价",
+      "type": "input",
+      "prop": "prop8",
+      "span": 8,
+      "attrs":
+      {}
+    },
+    {
+      "title": "商品批发",
+      "type": "input",
+      "prop": "prop9",
+      "span": 8,
+      "attrs":
+      {}
+    },
+    {
+      "title": "赠送积分",
+      "prop": "prop10",
+      "type": "input",
+      "span": 8,
+      "attrs":
+      {}
+    }]
+  }],
+  "formRules":
+  {
+    "prodbrand": [
+    {
+      "required": true,
+      "message": "",
+      "trigger": "blur"
+    }]
+  }
+}

@@ -1,0 +1,118 @@
+// frame-search
+@import "base.less";
+
+.frame-search {
+  zoom: 1;
+
+  .input-group {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .input-label {
+    letter-spacing: 0px;
+    color: #8dabc4;
+  }
+
+  &:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0px;
+    content: "."
+  }
+
+  .el-input-group__append,
+  .el-input-group__prepend {
+    padding: 0 5px;
+  }
+
+  .frame-actions {
+    float: right;
+    margin-bottom: 10px;
+  }
+}
+
+//table
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background: #e7f9f5;
+}
+
+.table-container {
+  background: #fff;
+  padding-bottom: 20px;
+
+  .cell {
+    .el-button {
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+
+    .el-button+.el-button {
+      margin-left: 0px;
+    }
+  }
+
+  .img-intable {
+    max-width: 50px;
+    max-width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
+
+//form 
+.form {
+  .form-group-title {
+    padding: 5px 10px;
+    margin: 20px 0;
+    font-size: 18px;
+    border-left: 4px solid @ht1;
+    line-height: 16px;
+  }
+
+  .form-group-title2 {
+    padding: 5px 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    border-left: 4px solid #e3e3e3;
+    line-height: 16px;
+  }
+
+  .form-content2 {
+    padding-left: 14px;
+  }
+
+  // quill-editor-content
+  .quill-editor-content {
+    margin: 10px 0 20px 0;
+  }
+}
+
+.form-show {
+  .el-form-item {
+    background: #dedede;
+    border: 1px solid #dedede;
+  }
+
+  .el-form-item__label {
+    padding: 0 10px;
+  }
+
+  .el-form-item__content {
+    word-break: break-all;
+    padding: 0 10px;
+    line-height: 38px;
+    background: #fff;
+  }
+}
+
+//title
+.frame-title {
+  font-size: 18px;
+  line-height: 40px;
+  border-left: 4px solid #409eff;
+  padding-left: 10px;
+  margin: 20px 0;
+}
